@@ -7,6 +7,11 @@ const container = window.document.querySelector(".grocery-container");
 const inputList = window.document.querySelector(".grocery-list");
 const clearBtn = window.document.querySelector(".clear-btn");
 
+// edit items
+let editElement;
+let editFlag = false;
+let editId = "";
+
 submitForm.addEventListener("submit", function (e) {
   e.preventDefault();
   const currentItem = inputItem.value;
